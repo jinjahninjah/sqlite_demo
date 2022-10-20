@@ -14,13 +14,13 @@ from typing import List, Dict
 
 from table_models import User
 
+create_database()
+
 app = FastAPI(
     title="Sqlite Demo",
     version="0.0.0",
     docs_url="/"
 )
-
-create_database()
 
 
 @app.get("/version/")
